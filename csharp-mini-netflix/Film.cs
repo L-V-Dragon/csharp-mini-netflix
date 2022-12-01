@@ -61,7 +61,7 @@ namespace csharp_mini_netflix
         // METODI PUBBLICI
         public void StampaFilm()
         {
-            Console.WriteLine("\t" + this.titolo + " " + this.annoDiProduzione(); +", ");
+            Console.WriteLine("\t" + this.titolo + " " + this.annoDiProduzione + ", ");
             StampaAttoriLista();
         }
         // METODI DI UTILITA
@@ -73,3 +73,4 @@ namespace csharp_mini_netflix
             }
         }
     }
+}

@@ -11,22 +11,24 @@ namespace csharp_mini_netflix
         //PROPRIETà
         private string titolo;
         private int annoDiProduzione;
+        private int stagione;
         //private string director;
         private List<Attori> attori;
+        private List<Episodio> episodi;
         //STATO
         private bool inWishlist;
         private bool preferito;
         // COSTRUTTORI
-        public SerieTv(string titolo, int annoDiProduzione, Attori attori, bool inWishlist = false, bool preferito = false)
+        public SerieTv(string titolo, int stagione, int annoDiProduzione, Attori attori, Episodio episodi, bool inWishlist = false, bool preferito = false)
         {
             this.titolo = titolo;
+            this.stagione = stagione;
             this.annoDiProduzione = annoDiProduzione;
-            this.attori = new List<Attori>()
-            {
-                attori
-            };
+            this.attori = new List<Attori>(){attori};
+            this.episodi = new List<Episodio>() { episodi };
             this.inWishlist = inWishlist;
             this.preferito = preferito;
+
         }
         // GETTERS
         public string GetTitolo()
